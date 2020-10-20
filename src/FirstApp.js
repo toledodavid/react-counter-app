@@ -1,9 +1,7 @@
 import React from 'react';
 //import React, { Fragment } from 'react';
 
-const FirstApp = () => {
-
-  const greeting = 'Hello David';
+const FirstApp = ({greeting = "Hello world"}) => {
 
   return (
     // <Fragment>
