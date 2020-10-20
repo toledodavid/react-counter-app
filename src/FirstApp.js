@@ -2,6 +2,9 @@ import React from 'react';
 //import React, { Fragment } from 'react';
 
 const FirstApp = () => {
+
+  const greeting = 'Hello David';
+
   return (
     // <Fragment>
     //   <h1>Hello world</h1>
@@ -10,7 +13,7 @@ const FirstApp = () => {
 
     // This is also a fragment
     <>
-      <h1>Hello world</h1>
+      <h1>{greeting}</h1>
       <p>My first App</p>
     </>
   );
