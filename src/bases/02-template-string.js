@@ -9,10 +9,10 @@ ${lastName}
   ${2 + 2}
 `;
 
-console.log(completeName);
+//console.log(completeName);
 
-function getSaludo(name) {
+export function getSaludo(name = 'Juan') {
   return 'Hello ' + name;
 }
 
-console.log(`This is a text: ${getSaludo(name)}`);
+//console.log(`This is a text: ${getSaludo(name)}`);
