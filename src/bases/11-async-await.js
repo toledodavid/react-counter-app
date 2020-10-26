@@ -1,6 +1,6 @@
 // console.log('Hello!');
 
-const getImage = async() => {
+export const getImage = async() => {
 
   try {
 
@@ -10,16 +10,18 @@ const getImage = async() => {
 
     const {data} = await response.json();
     const {url} = data.images.original;
-    console.log(url);
+    // console.log(url);
 
-    const img = document.createElement('img');
-    img.src = url;
-    document.body.append(img);
+    // const img = document.createElement('img');
+    // img.src = url;
+    // document.body.append(img);
+    return url;
 
   } catch (error) {
-    console.log(error);
+    // console.log(error);
+    return 'There is and error';
   }
 
 }
 
-getImage();
+// getImage();
