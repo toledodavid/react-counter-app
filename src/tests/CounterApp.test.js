@@ -35,4 +35,12 @@ describe('Tests for <CounterApp /> component', () => {
     const headerValueText = wrapper.find('h2').text().trim();
     expect(headerValueText).toBe('-1');
   });
+
+  test('The button reset should set counter to default value', () => {
+    const wrapper = shallow(<CounterApp value={105} />);
+    wrapper.find('button').at(0).simulate('click');
+    wrapper.find('button').at(1).simulate('click');
+    const headerValueText = wrapper.find('h2').text().trim();
+    expect(headerValueText).toBe('105');
+  });
 });
